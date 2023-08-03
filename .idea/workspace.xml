@@ -5,24 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="90d70938-a33d-42dc-a586-3eacc7524040" name="Changes" comment="initial commit">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/journal/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/journal/dtos/requests/ChangePasswordRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/journal/dtos/requests/CreateDiaryRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/journal/dtos/requests/CreateUserRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/journal/dtos/requests/DeleteDiaryRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/journal/dtos/requests/FindDiaryRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/journal/dtos/requests/LoginRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/journal/dtos/responses/ChangePasswordResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/journal/dtos/responses/CreateDiaryResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/journal/dtos/responses/CreateUserResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/journal/dtos/responses/LoginResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/journal/services/BeanUtilHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/journal/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/journal/controllers/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/journal/data/models/Diary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/journal/data/models/Diary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/journal/data/models/Entry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/journal/data/models/Entry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/journal/data/repositories/DiaryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/journal/data/repositories/DiaryRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/journal/data/repositories/EntryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/journal/data/repositories/EntryRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/journal/services/DiaryServicesImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/journal/services/DiaryServicesImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/journal/services/UserServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/journal/services/UserServices.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/journal/services/UserServicesImplementationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/journal/services/UserServicesImplementationTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,29 +50,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "spring.configuration.checksum": "6b2b5614a23abed4834b7cb7b91c6887",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;6b2b5614a23abed4834b7cb7b91c6887&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -121,7 +114,11 @@
       <workItem from="1689705206857" duration="9684000" />
       <workItem from="1689851553859" duration="11115000" />
       <workItem from="1690040276301" duration="26000" />
-      <workItem from="1690138477031" duration="13819000" />
+      <workItem from="1690138477031" duration="19662000" />
+      <workItem from="1690355499524" duration="610000" />
+      <workItem from="1690461098434" duration="10746000" />
+      <workItem from="1691023098164" duration="609000" />
+      <workItem from="1691025293804" duration="472000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1690224933687</created>
@@ -137,7 +134,21 @@
       <option name="project" value="LOCAL" />
       <updated>1690225084289</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="initial commit">
+      <created>1690225205891</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1690225205891</updated>
+    </task>
+    <task id="LOCAL-00004" summary="initial commit">
+      <created>1690225337521</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1690225337521</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

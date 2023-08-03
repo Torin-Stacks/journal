@@ -3,11 +3,10 @@ package org.journal.services;
 import org.journal.data.models.Diary;
 import org.journal.data.models.User;
 import org.journal.dtos.requests.*;
-import org.journal.dtos.responses.ChangePasswordResponse;
-import org.journal.dtos.responses.CreateDiaryResponse;
-import org.journal.dtos.responses.CreateUserResponse;
-import org.journal.dtos.responses.LoginResponse;
-import org.springframework.stereotype.Service;
+import org.journal.dtos.responses.*;
+import org.springframework.http.ResponseEntity;
+
+import java.util.List;
 
 public interface UserServices {
     CreateUserResponse register(CreateUserRequest createUserRequest);
@@ -26,4 +25,8 @@ public interface UserServices {
     Diary findDiaryByName(String username,String DiaryName);
 
     User findByUsername(String username);
+
+
+    FindDiariesResponse findAllDiaryByUsername(String username);
+
 }

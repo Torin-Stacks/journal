@@ -1,6 +1,7 @@
 package org.journal.data.models;
 
 import lombok.Data;
+import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
@@ -13,6 +14,7 @@ public class Entry {
     private String id;
     private String title;
     private String body;
-    private String journalId;
+    private String diaryId;
+    @CreatedDate
     private LocalDateTime dateCreated;
 }

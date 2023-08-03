@@ -4,12 +4,12 @@ import org.journal.data.models.Diary;
 import org.journal.data.models.User;
 import org.journal.data.repositories.UserRepository;
 import org.journal.dtos.requests.*;
-import org.journal.dtos.responses.ChangePasswordResponse;
-import org.journal.dtos.responses.CreateDiaryResponse;
-import org.journal.dtos.responses.CreateUserResponse;
-import org.journal.dtos.responses.LoginResponse;
+import org.journal.dtos.responses.*;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 
 @Service
@@ -83,6 +83,11 @@ public class UserServicesImplementation implements UserServices {
     @Override
     public User findByUsername(String username) {
         return userRepository.findByUsername(username);
+    }
+
+    @Override
+    public FindDiariesResponse findAllDiaryByUsername(String username) {
+        return diaryServices.findAllDiariesByUsername(username);
     }
 
 

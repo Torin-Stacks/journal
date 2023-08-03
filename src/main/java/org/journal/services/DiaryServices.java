@@ -4,7 +4,11 @@ import org.journal.data.models.Diary;
 import org.journal.dtos.requests.CreateDiaryRequest;
 import org.journal.dtos.requests.DeleteDiaryRequest;
 import org.journal.dtos.responses.CreateDiaryResponse;
+import org.journal.dtos.responses.FindDiariesResponse;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 
 public interface DiaryServices {
@@ -15,4 +19,5 @@ public interface DiaryServices {
     Diary findDiary(String username, String diaryName);
 
 
+    FindDiariesResponse findAllDiariesByUsername(String username);
 }

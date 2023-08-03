@@ -11,5 +11,7 @@ public interface DiaryRepository extends MongoRepository<Diary,String> {
     Diary findByName(String diaryName);
 
     List<Diary> findByUsername(String username);
+
+    Diary findByUsernameAndName(String username, String diaryName);
 }
 

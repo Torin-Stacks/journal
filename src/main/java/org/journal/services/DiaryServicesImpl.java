@@ -6,7 +6,9 @@ import org.journal.data.repositories.DiaryRepository;
 import org.journal.dtos.requests.CreateDiaryRequest;
 import org.journal.dtos.requests.DeleteDiaryRequest;
 import org.journal.dtos.responses.CreateDiaryResponse;
+import org.journal.dtos.responses.FindDiariesResponse;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -25,8 +27,10 @@ public class DiaryServicesImpl implements DiaryServices {
         Diary diary = new Diary();
         User existingUser = validateUserName(createDiaryRequest.getUsername());
         String diaryName = validateDairyName(createDiaryRequest.getDiaryName());
+        System.out.println(diaryName + " ------------------------------------------");
         diary.setName(diaryName);
         diary.setUsername(existingUser.getUsername());
+        System.out.println(diary + " ==============================================================");
         diaryRepository.save(diary);
 
 
@@ -66,17 +70,20 @@ public class DiaryServicesImpl implements DiaryServices {
 
     @Override
     public Diary findDiary(String username, String diaryName) {
+        Diary foundDiary = diaryRepository.findByUsernameAndName(username, diaryName);
 
-        List<Diary> foundDiaries = diaryRepository.findByUsername(username);
-        System.out.println(foundDiaries);
-        for(Diary diary : foundDiaries){
-            if(diary.getName().equals(diaryName)){
-                return diary;
-            }
+        if (foundDiary == null) {
+            throw new IllegalArgumentException("diary does not exist");
         }
-         throw new IllegalArgumentException("diary does not exist");
+        return foundDiary;
     }
+
+    @Override
+    public FindDiariesResponse findAllDiariesByUsername(String username) {
+        return diaryRepository.findByUsername(username);
+    }
+
 
 }
 
-//if(diary != null && diary.getUsername().equals(deleteDiaryRequest.getUsername())){diaryRepository.delete(diary);}
+

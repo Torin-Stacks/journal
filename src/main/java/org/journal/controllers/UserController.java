@@ -2,13 +2,15 @@ package org.journal.controllers;
 
 import org.journal.data.models.Diary;
 import org.journal.dtos.requests.*;
-import org.journal.dtos.responses.ChangePasswordResponse;
-import org.journal.dtos.responses.CreateDiaryResponse;
-import org.journal.dtos.responses.CreateUserResponse;
-import org.journal.dtos.responses.LoginResponse;
+import org.journal.dtos.responses.*;
 import org.journal.services.UserServices;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
+import java.net.http.HttpResponse;
+import java.util.List;
 
 @RestController
 public class UserController {
@@ -39,14 +41,14 @@ public class UserController {
         userServices.deleteDiary(id,username);
     }
 
-//   @DeleteMapping("/deleteDiary/{id}")
-//    public void deleteDiary(@RequestBody DeleteDiaryRequest deleteDiaryRequest){
-//        userServices.deleteDiary(deleteDiaryRequest);
-//   }
-
    @GetMapping("/findDiary/{username}")
-    public Diary findDiary(@PathVariable String username, @RequestBody String diaryName ){
+    public Diary findDiary(@PathVariable String username, @RequestParam String diaryName ){
         return userServices.findDiaryByName(username, diaryName);
    }
+
+    @GetMapping("/findAllDiary/{username}")
+    public FindDiariesResponse findAllDiary(@PathVariable String username){
+        return  userServices.findAllDiaryByUsername(username); // ask how to mapping a list to the findDiariesResponse
+    }
 
 }
