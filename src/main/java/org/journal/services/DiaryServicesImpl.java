@@ -79,7 +79,7 @@ public class DiaryServicesImpl implements DiaryServices {
     }
 
     @Override
-    public FindDiariesResponse findAllDiariesByUsername(String username) {
+    public List<Diary> findAllDiariesByUsername(String username) {
         return diaryRepository.findByUsername(username);
     }
 

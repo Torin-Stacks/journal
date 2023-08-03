@@ -86,7 +86,7 @@ public class UserServicesImplementation implements UserServices {
     }
 
     @Override
-    public FindDiariesResponse findAllDiaryByUsername(String username) {
+    public List<Diary> findAllDiaryByUsername(String username) {
         return diaryServices.findAllDiariesByUsername(username);
     }
 

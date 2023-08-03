@@ -51,6 +51,11 @@ private  final  EntryRepository entryRepository;
         entryRepository.delete(foundEntry);
 
     }
+    @Override
+    public Entry getDiaryEntry(String entryId) {
+        Entry foundEntry = entryRepository.findById(entryId).orElseThrow(RuntimeException::new);
+        return foundEntry;
+    }
 
 
 }

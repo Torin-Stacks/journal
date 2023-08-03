@@ -4,19 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="90d70938-a33d-42dc-a586-3eacc7524040" name="Changes" comment="initial commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/journal/services/BeanUtilHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/journal/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/journal/controllers/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/journal/data/models/Diary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/journal/data/models/Diary.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/journal/data/models/Entry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/journal/data/models/Entry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/journal/data/repositories/DiaryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/journal/data/repositories/DiaryRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/journal/data/repositories/EntryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/journal/data/repositories/EntryRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/journal/services/DiaryServicesImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/journal/services/DiaryServicesImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/journal/services/UserServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/journal/services/UserServices.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/journal/services/UserServicesImplementationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/journal/services/UserServicesImplementationTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="90d70938-a33d-42dc-a586-3eacc7524040" name="Changes" comment="initial commit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -119,6 +107,7 @@
       <workItem from="1690461098434" duration="10746000" />
       <workItem from="1691023098164" duration="609000" />
       <workItem from="1691025293804" duration="472000" />
+      <workItem from="1691050414275" duration="363000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1690224933687</created>
@@ -148,13 +137,28 @@
       <option name="project" value="LOCAL" />
       <updated>1690225337521</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="upgrade">
+      <created>1691050620079</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1691050620079</updated>
+    </task>
+    <task id="LOCAL-00006" summary="initial commit">
+      <created>1691050645414</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1691050645414</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
+    <MESSAGE value="upgrade" />
     <MESSAGE value="initial commit" />
     <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
   </component>

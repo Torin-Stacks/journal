@@ -19,5 +19,5 @@ public interface DiaryServices {
     Diary findDiary(String username, String diaryName);
 
 
-    FindDiariesResponse findAllDiariesByUsername(String username);
+    List<Diary> findAllDiariesByUsername(String username);
 }

@@ -17,4 +17,5 @@ public interface EntryServices {
 
     void deleteEntry(String entryId);
 
+    Entry getDiaryEntry(String entryId);
 }

@@ -33,6 +33,12 @@ private final EntryServices entryServices;
        return new ResponseEntity<>(entryServices.getDiaryEntries(diaryId), HttpStatus.OK);
     }
 
+    @GetMapping("/{entryId}")
+    public ResponseEntity<Entry> getEntry(@PathVariable String entryId){
+        return new ResponseEntity<>(entryServices.getDiaryEntry(entryId), HttpStatus.OK);
+    }
+
+
     @DeleteMapping("/deleteentry/{entryId}")
     public void deleteEntry(@PathVariable String entryId){entryServices.deleteEntry(entryId);}
 }

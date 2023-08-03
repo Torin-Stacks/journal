@@ -1,6 +1,7 @@
 package org.journal.controllers;
 
 import org.journal.data.models.Diary;
+import org.journal.data.models.Entry;
 import org.journal.dtos.requests.*;
 import org.journal.dtos.responses.*;
 import org.journal.services.UserServices;
@@ -46,9 +47,14 @@ public class UserController {
         return userServices.findDiaryByName(username, diaryName);
    }
 
+//    @GetMapping("/findAllDiary/{username}")
+//    public FindDiariesResponse findAllDiary(@PathVariable String username){
+//        return  userServices.findAllDiaryByUsername(username); // ask how to mapping a list to the findDiariesResponse
+//    }
+
     @GetMapping("/findAllDiary/{username}")
-    public FindDiariesResponse findAllDiary(@PathVariable String username){
-        return  userServices.findAllDiaryByUsername(username); // ask how to mapping a list to the findDiariesResponse
+    public ResponseEntity<List<Diary>> findAllDiaries (@PathVariable String username){
+        return new ResponseEntity<>(userServices.findAllDiaryByUsername(username), HttpStatus.OK);
     }
 
 }

@@ -27,6 +27,6 @@ public interface UserServices {
     User findByUsername(String username);
 
 
-    FindDiariesResponse findAllDiaryByUsername(String username);
+    List<Diary> findAllDiaryByUsername(String username);
 
 }
